@@ -23,10 +23,10 @@
 hs_err_pid*
 
 
-## Intellij
-#.idea/**
-#*.iml
-#*.iws
-#*.ipr
-#*.ids
-#*.orig
+# Intellij
+.idea/**
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
