@@ -14,20 +14,20 @@ import static org.junit.Assert.*;
  */
 public class BranchSumTest {
 
-    BinaryTree rootNode;
+    BinaryTree<Integer> rootNode;
     BranchSum branchSum;
 
     @Before
     public void setup() {
         branchSum = new BranchSum();
-        rootNode = new BinaryTree(0);
-        BinaryTree root_left = new BinaryTree(1);
-        BinaryTree root_right = new BinaryTree(2);
-        BinaryTree root_left_left = new BinaryTree(3);
-        BinaryTree root_left_right = new BinaryTree(4);
-        BinaryTree root_right_left = new BinaryTree(5);
-        BinaryTree root_right_right = new BinaryTree(61);
-        BinaryTree root_right_right_right = new BinaryTree(1);
+        rootNode = new BinaryTree<>(0);
+        BinaryTree<Integer> root_left = new BinaryTree<>(1);
+        BinaryTree<Integer> root_right = new BinaryTree<>(2);
+        BinaryTree<Integer> root_left_left = new BinaryTree<>(3);
+        BinaryTree<Integer> root_left_right = new BinaryTree<>(4);
+        BinaryTree<Integer> root_right_left = new BinaryTree<>(5);
+        BinaryTree<Integer> root_right_right = new BinaryTree<>(61);
+        BinaryTree<Integer> root_right_right_right = new BinaryTree<>(1);
 
         root_right_right.setRight(root_right_right_right);
         root_right.setLeft(root_right_left);

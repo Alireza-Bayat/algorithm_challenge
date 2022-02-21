@@ -10,14 +10,14 @@ import java.util.ArrayList;
  */
 public class BranchSum {
 
-    public ArrayList<Integer> getBranchSum(BinaryTree binaryTree) {
+    public ArrayList<Integer> getBranchSum(BinaryTree<Integer> binaryTree) {
         ArrayList<Integer> sums = new ArrayList<>();
         getBranchSum(binaryTree, sums, 0);
         return sums;
     }
 
     //time/space(worst case, unbalanced tree) complexity = O(n)
-    private void getBranchSum(BinaryTree binaryTreeRootNode, ArrayList<Integer> sum, int branchSum) {
+    private void getBranchSum(BinaryTree<Integer> binaryTreeRootNode, ArrayList<Integer> sum, int branchSum) {
         if (binaryTreeRootNode == null)
             return;
         branchSum += binaryTreeRootNode.getValue();

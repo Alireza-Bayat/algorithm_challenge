@@ -10,18 +10,18 @@ public class FindClosestValueInBST {
 
     // time complexity O(log(n)) | space complexity O(log(n)) cause of stack call back and frame passes
     //worst case time O(n) in un-balanced tree
-    public int findClosestValueInBSTRecursive(BinaryTree binaryTree, int target) {
+    public int findClosestValueInBSTRecursive(BinaryTree<Integer> binaryTree, int target) {
         //root node value would be the closest for the starting point
         return findClosestValueInBSTHelperRecursive(binaryTree, target, binaryTree.getValue());
     }
 
     // time complexity O(log(n)) | space complexity O(1)
     //worst case time O(n) in un-balanced tree
-    public int findClosestValueInBSTIterative(BinaryTree binaryTree, int target) {
+    public int findClosestValueInBSTIterative(BinaryTree<Integer> binaryTree, int target) {
         return findClosestValueInBSTHelperIterative(binaryTree, target, binaryTree.getValue());
     }
 
-    private int findClosestValueInBSTHelperRecursive(BinaryTree tree, int target, int closest) {
+    private int findClosestValueInBSTHelperRecursive(BinaryTree<Integer> tree, int target, int closest) {
         if (tree == null)
             return closest;
 
@@ -38,7 +38,7 @@ public class FindClosestValueInBST {
             return closest;
     }
 
-    public int findClosestValueInBSTHelperIterative(BinaryTree tree, int target, int closest) {
+    public int findClosestValueInBSTHelperIterative(BinaryTree<Integer> tree, int target, int closest) {
         while (tree != null) {
             int currentNodeClosestDifference = Math.abs(closest - target);
             int closestDifference = Math.abs(tree.getValue() - target);
