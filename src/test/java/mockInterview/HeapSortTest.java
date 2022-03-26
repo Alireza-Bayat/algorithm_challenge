@@ -1,8 +1,6 @@
-package algoExpert.mockInterview;
+package mockInterview;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @author alireza_bayat

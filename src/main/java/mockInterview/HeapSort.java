@@ -1,4 +1,4 @@
-package algoExpert.mockInterview;
+package mockInterview;
 
 /**
  * @author alireza_bayat
