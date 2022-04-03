@@ -1,6 +1,6 @@
 package algoExpert.easy;
 
-import algoExpert.utils.BinaryTree;
+import utils.BinaryTree;
 
 /**
  * @author alireza_bayat

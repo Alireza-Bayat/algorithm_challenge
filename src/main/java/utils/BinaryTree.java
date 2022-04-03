@@ -1,4 +1,4 @@
-package algoExpert.utils;
+package utils;
 
 /**
  * @author alireza_bayat

@@ -1,6 +1,6 @@
 package algoExpert.medium;
 
-import algoExpert.utils.BinaryTree;
+import utils.BinaryTree;
 import org.junit.Before;
 import org.junit.Test;
 

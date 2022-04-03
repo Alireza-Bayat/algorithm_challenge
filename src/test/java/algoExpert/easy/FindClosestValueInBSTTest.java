@@ -1,6 +1,6 @@
 package algoExpert.easy;
 
-import algoExpert.utils.BinaryTree;
+import utils.BinaryTree;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,12 +1,8 @@
 package algoExpert.easy;
 
-import algoExpert.utils.BinaryTree;
+import utils.BinaryTree;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.ArrayList;
-
-import static org.junit.Assert.*;
 
 /**
  * @author alireza_bayat
