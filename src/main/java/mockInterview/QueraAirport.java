@@ -51,7 +51,6 @@ public class QueraAirport {
         int runwayNo;
         int noCommands;
 
-
         Scanner sc = new Scanner(System.in);
         airplaneNo = Integer.parseInt(sc.next());
         runwayNo = Integer.parseInt(sc.next());
@@ -94,7 +93,7 @@ public class QueraAirport {
 
     //assign 0 state to unknown
     private static void takeOff(Map<String, Integer> airplaneMap, List<String> runways, String planeId) {
-        int planeState = airplaneMap.getOrDefault(planeId, 0);
+        int planeState = airplaneMap.getOrDefault(planeId, 4);
         if (planeState == 4) {
             System.out.println("YOU ARE NOT HERE");
         } else if (planeState == 3) {
@@ -102,7 +101,7 @@ public class QueraAirport {
         } else if (planeState == 2) {
             System.out.println("YOU ARE TAKING OFF");
         } else if (planeState == 1 && freeRunwayFromStart(runways) == -1) {
-            System.out.println("NO FREE BOUND'");
+            System.out.println("NO FREE BOUND");
         } else {
             airplaneMap.put(planeId, 2);
             int i = freeRunwayFromStart(runways);
@@ -114,15 +113,15 @@ public class QueraAirport {
 
     //assign 0 state to unknown
     private static void landing(Map<String, Integer> airplaneMap, List<String> runways, String planeId) {
-        int planeState = airplaneMap.getOrDefault(planeId, 0);
+        int planeState = airplaneMap.getOrDefault(planeId, 4);
         if (planeState == 1) {
             System.out.println("YOU ARE HERE");
         } else if (planeState == 2) {
             System.out.println("YOU ARE TAKING OFF");
         } else if (planeState == 3) {
             System.out.println("YOU ARE LANDING NOW");
-        } else if (planeState == 4 && freeRunwayFromStart(runways) == -1) {
-            System.out.println("NO FREE BOUND'");
+        } else if (planeState == 4 && freeRunwayFromEnd(runways) == -1) {
+            System.out.println("NO FREE BOUND");
         } else {
             airplaneMap.put(planeId, 3);
             int i = freeRunwayFromEnd(runways);
@@ -131,7 +130,7 @@ public class QueraAirport {
     }
 
     private static void planeStatus(Map<String, Integer> airplaneMap, String planeId) {
-        System.out.println(airplaneMap.get(planeId));
+        System.out.println(airplaneMap.getOrDefault(planeId, 4));
     }
 
     private static void bandStatus(List<String> runways, int runwayId) {
@@ -139,7 +138,7 @@ public class QueraAirport {
     }
 
     private static int freeRunwayFromStart(List<String> runways) {
-        for (int i = 0; i < runways.size(); i++) {
+        for (int i = 0; i < runways.size() - 1 ; i++) {
             if (runways.get(i).equals("FREE"))
                 return i;
         }
