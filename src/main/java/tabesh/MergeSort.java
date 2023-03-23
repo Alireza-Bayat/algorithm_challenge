@@ -3,7 +3,7 @@ package tabesh;
 public class MergeSort {
 
     public int[] mergeSort(int[] arr) {
-        if (arr.length==0)
+        if (arr.length == 0)
             return arr;
         return mergeSort(arr, 0, arr.length - 1);
     }
