@@ -1,4 +1,4 @@
-package effective.java.codeSample.builder;
+package designPattern.builder;
 
 /**
  * @author alireza_bayat

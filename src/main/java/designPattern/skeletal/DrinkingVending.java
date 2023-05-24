@@ -1,14 +1,15 @@
-package effective.java.codeSample.skeletal;
+package designPattern.skeletal;
 
-public class CandyVending implements Vending {
+public class DrinkingVending implements Vending {
 
     private static class AbstractVendingDelegator extends AbstractVending {
+
         @Override
         public void chooseProduct() {
-            System.out.println("Produce diiferent candies");
-            System.out.println("Choose a type of candy");
-            System.out.println("pay for candy");
-            System.out.println("collect candy");
+            System.out.println("Produce diiferent soft drinks");
+            System.out.println("Choose a type of soft drinks");
+            System.out.println("pay for drinks");
+            System.out.println("collect drinks");
         }
     }
 
@@ -33,5 +34,4 @@ public class CandyVending implements Vending {
     public void process() {
         delegator.process();
     }
-
 }

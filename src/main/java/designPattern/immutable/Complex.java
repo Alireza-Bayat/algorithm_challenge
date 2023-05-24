@@ -1,4 +1,4 @@
-package effective.java.codeSample.immutable;
+package designPattern.immutable;
 
 /**
  * @author alireza_bayat

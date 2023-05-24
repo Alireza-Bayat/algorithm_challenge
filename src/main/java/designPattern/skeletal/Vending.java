@@ -1,4 +1,4 @@
-package effective.java.codeSample.skeletal;
+package designPattern.skeletal;
 
 public interface Vending {
     void start();

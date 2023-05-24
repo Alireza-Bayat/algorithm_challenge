@@ -1,4 +1,4 @@
-package effective.java.codeSample.skeletal;
+package designPattern.skeletal;
 
 public abstract class AbstractVending implements Vending {
     @Override

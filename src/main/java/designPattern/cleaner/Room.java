@@ -1,4 +1,4 @@
-package effective.java.codeSample.cleaner;
+package designPattern.cleaner;
 
 
 import java.lang.ref.Cleaner;

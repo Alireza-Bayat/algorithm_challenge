@@ -1,4 +1,4 @@
-package effective.java.codeSample.builder.hierarchy;
+package designPattern.builder.hierarchy;
 
 import java.util.EnumSet;
 import java.util.Objects;

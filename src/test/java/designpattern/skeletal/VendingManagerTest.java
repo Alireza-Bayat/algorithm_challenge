@@ -1,11 +1,11 @@
-package effective.java.skeletal;
+package designpattern.skeletal;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import effective.java.codeSample.skeletal.CandyVending;
-import effective.java.codeSample.skeletal.DrinkingVending;
-import effective.java.codeSample.skeletal.Vending;
+import designPattern.skeletal.CandyVending;
+import designPattern.skeletal.DrinkingVending;
+import designPattern.skeletal.Vending;
 
 public class VendingManagerTest {
 
