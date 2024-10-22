@@ -23,12 +23,12 @@ public class CombinationSum {
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
-        combine(candidates, target, result, new ArrayList<>());
+        combine(candidates, target, result, new ArrayList<>(), 0);
         return result;
     }
 
-    private void combine(int[] candidates, int target, List<List<Integer>> result, List<Integer> path) {
-        Integer sum = path.stream().reduce(0, Integer::sum);
+    private void combine(int[] candidates, int target, List<List<Integer>> result, List<Integer> path, int index) {
+        int sum = path.stream().mapToInt(Integer::intValue).sum();
         if (target == sum) {
             result.add(new ArrayList<>(path));
             return;
@@ -37,9 +37,9 @@ public class CombinationSum {
             return;
         }
 
-        for (int i = 0; i < candidates.length; i++) {
+        for (int i = index; i < candidates.length; i++) {
             path.add(candidates[i]);
-            combine(candidates, target, result, path);
+            combine(candidates, target, result, path, i);
             path.remove(path.size() - 1);
         }
     }
