@@ -1,4 +1,4 @@
-package leet;
+package leet.arraysAndMatrix;
 
 import java.util.ArrayList;
 import java.util.HashSet;
