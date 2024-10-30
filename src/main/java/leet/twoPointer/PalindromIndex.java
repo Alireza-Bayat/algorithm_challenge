@@ -1,4 +1,4 @@
-package leet;
+package leet.twoPointer;
 
 public class PalindromIndex {
 

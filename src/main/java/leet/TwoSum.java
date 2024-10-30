@@ -35,6 +35,24 @@ public class TwoSum {
         return new int[]{-1, -1};
     }
 
+    //o(n/2)
+    public int[] twoSumII(int[] numbers, int target) {
+        int left = 0;
+        int right = numbers.length - 1;
+        while (left < right) {
+            int plus = numbers[left] + numbers[right];
+            if (plus > target) {
+                right--;
+            } else if (plus < target) {
+                left++;
+            } else {
+                return new int[]{left + 1, right + 1};
+            }
+        }
+
+        return null;
+    }
+
     private int searchInArray(int[] nums, int target, int currentIndex) {
         for (int i = 0; i < nums.length; i++) {
             if (i == currentIndex)

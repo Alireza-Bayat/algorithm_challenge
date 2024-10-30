@@ -3,12 +3,9 @@ package leet;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
-import java.sql.Time;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
 
 /**
  * @author alireza_bayat
@@ -42,5 +39,13 @@ public class TwoSumTest {
         System.out.println(LocalDateTime.now());
     }
 
+    @Test
+    public void twoSumII() {
+        System.out.println(LocalDateTime.now());
+        int[] sampleArray = {2, 7, 11, 15};
+        Arrays.stream(twoSum.twoSumII(sampleArray, 9)).forEach(System.out::print);
+        System.out.println();
+        System.out.println(LocalDateTime.now());
+    }
 
 }
