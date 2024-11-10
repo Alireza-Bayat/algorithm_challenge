@@ -1,17 +1,17 @@
-package leet;
+package leet.backtrack;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Permutation {
 
-    public static List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         permutations(nums, result, new ArrayList<>());
         return result;
     }
 
-    private static void permutations(int[] nums, List<List<Integer>> result, List<Integer> perm) {
+    private void permutations(int[] nums, List<List<Integer>> result, List<Integer> perm) {
         if (perm.size() == nums.length) {
             result.add(new ArrayList<>(perm));
             return;
@@ -60,12 +60,6 @@ public class Permutation {
 //        return result;
 //    }
 
-    public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
-        //[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-        List<List<Integer>> permutations = permute(nums);
-        System.out.println(permutations);
-    }
 }
 
 

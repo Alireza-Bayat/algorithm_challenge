@@ -1,4 +1,4 @@
-package leet;
+package leet.backtrack;
 
 import java.util.ArrayList;
 import java.util.HashMap;

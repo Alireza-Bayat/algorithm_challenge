@@ -1,8 +1,10 @@
-package leet;
+package leet.backtrack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import leet.ValidParentheses;
 
 /**
  * Example 1:
