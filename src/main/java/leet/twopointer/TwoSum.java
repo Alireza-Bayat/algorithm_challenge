@@ -1,4 +1,4 @@
-package leet.twoPointer;
+package leet.twopointer;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package leet.twoPointer;
+package leet.twopointer;
 
 import org.junit.Assert;
 import org.junit.Before;

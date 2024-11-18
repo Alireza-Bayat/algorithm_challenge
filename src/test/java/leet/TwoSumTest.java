@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 
-import leet.twoPointer.TwoSum;
+import leet.twopointer.TwoSum;
 
 
 /**

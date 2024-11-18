@@ -1,4 +1,4 @@
-package leet.twoPointer;
+package leet.twopointer;
 
 /**
  * @author alireza_bayat
